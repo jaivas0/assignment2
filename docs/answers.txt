@@ -1,0 +1,83 @@
+Name: Jailene Vasquez
+FSUID: jv24k
+Repository: https://github.com/jaivas0/assignment2
+
+Git Lab Tutorials completed: October 16, 2026
+GitHub account created: Last Semester
+Instructor access: My repository is public at https://github.com/jaivas0/assignment2
+=============================================================
+1.
+% git push
+Username for 'https://github.com': jaivas0
+Password for 'https://jaivas0@github.com':
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 11 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 908 bytes | 908.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/jaivas0/assignment2.git
+   f4975e5..ca644d2  master -> master
+2.
+Command: git log --oneline | wc -l
+Answer: 9 commits
+
+3.
+command: git log -1 README.md
+Date:   Fri Oct 16 21:31:22 2026 -0400
+
+4.
+Reason 1: Branches let you work on a new feature or try something risky
+without affecting the main code. If it doesn't work out, you can delete
+the branch, and if it does, you merge it back into master.
+Reason 2: Branches let multiple people work on different things at the
+same time and merge their work together later.
+
+5.
+git log: the commit history of my current branch
+git status: what I’ve changed, staged, or not tracked yet, which branch I’m on, and how I compare to the remote as of my last fetch
+
+6.
+git log Vehicle.h
+
+7.
+Command: git log --grep="file"
+
+8.
+8.
+(I) Inheritance: When a new class is built from an existing class and
+automatically gets its variables and functions. The child class can reuse
+them and add its own. In this repo, Bicycle inherits from Vehicle and adds
+its own gear count, and Car inherits from PoweredVehicle and adds its
+engine size.
+
+(II) Polymorphism: When the same function call does different things
+depending on what type of object it's called on. Vehicle has virtual
+functions like mileageEstimate and toString, and Bicycle and Car override
+them with their own versions, so the right one runs depending on the
+actual object.
+
+(III) Encapsulation: Keeping a class's data private and only letting other
+code access it through public functions. In Vehicle, myBrand and myModel
+are private and can only be changed through getBrand, setBrand, getModel
+and setModel. Bicycle and Car do the same thing with their own private
+variables.
+
+9. In the Integration Manager workflow there is one person called the
+integration manager who pulls in changes from every developer's public repo
+and merges them into the main repository. In the Dictator and Lieutenants
+workflow there is an extra layer in between. Lieutenants are in charge of
+specific parts of the project and merge their team's changes first, and then
+the dictator only merges from the lieutenants into the main repo. So the
+main difference is that Dictator and Lieutenants splits up the merging work
+into levels instead of one person handling everything.
+
+10. With 100 developers in a Centralized workflow, everyone pushes to the
+same shared repo, so there would be a lot of conflicts and people constantly
+having to pull and merge before they can push. It would also be hard to
+review everything that goes in. With Dictator and Lieutenants, the work is
+split up by area, so each lieutenant only reviews and merges changes for
+their part of the project. That way the dictator doesn't get overwhelmed,
+the code gets reviewed before it reaches the main repo, and the project
+stays organized even with a lot of people.
